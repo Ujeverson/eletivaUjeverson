@@ -2,7 +2,7 @@ html, body {
     margin: 0;
 }
 #imagem_fundo {
-    background: url("educacao.jpeg");
+    background: url("caminho_educacao.jpeg");
     height: 100%;
     text-align: center;
 }

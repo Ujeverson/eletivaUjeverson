@@ -8,14 +8,14 @@ html, body {
     background-size: cover;
 }
 #titulo {
-    color: rgb(3, 95, 31);
+    color: rgb(1, 14, 5);
     padding-top: 20%;
     font-size: 70px;
     line-height: 0.6;
     
 }
 #subtitulo {
-    color: white;
+    color: rgb(124, 6, 6);
     margin-left: 20%;
     margin-right: 20%;
     border-top: 3px solid white;
@@ -34,7 +34,7 @@ section {
     float: left;
 }
 .destaque {
-    background-color: #f7f7f7;
+    background-color: #12915c;
 }
 .imgeco {
     width: 90%;

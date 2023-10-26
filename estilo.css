@@ -2,10 +2,10 @@ html, body {
     margin: 0;
 }
 #imagem_fundo {
-    background: url("img/caminho_educacao.jpeg");
+    background: url("fundo.jpg");
     height: 100%;
     text-align: center;
-    background-image: cover;
+    background-size: cover;
 }
 #titulo {
     color: white;
@@ -31,10 +31,33 @@ html, body {
 }
 section {
     padding: 20px;
+    float: left;
 }
 .destaque {
     background-color: #f7f7f7;
 }
 .imgeco {
     width: 90%;
+    height: 30%;
+}
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.dois {
+    width: 40%;
+}
+.quatro {
+    width: 15%;
+}
+.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+.justificado {
+    text-align: justify;
+}
+.centralizado {
+    text-align: center;
 }

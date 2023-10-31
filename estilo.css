@@ -12,7 +12,8 @@ html, body {
     padding-top: 20%;
     font-size: 70px;
     line-height: 0.6;
-    text-shadow: 1px 1px  rgb(255, 255, 255); 
+    text-shadow: 1px 1px  rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 #subtitulo {
@@ -20,7 +21,8 @@ html, body {
     margin-left: 20%;
     margin-right: 20%;
     border-top: 3px solid white;
-    text-shadow: 1px 1px  rgb(0, 0, 0); 
+    text-shadow: 1px 1px  rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #acao {
     color: white;

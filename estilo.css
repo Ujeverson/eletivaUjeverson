@@ -2,7 +2,7 @@ html, body {
     margin: 0;
 }
 #imagem_fundo {
-    background: url("fundo.jpg");
+    background: url("img/caminho_educacao.jpeg");
     height: 100%;
     text-align: center;
     background-size: cover;
@@ -19,7 +19,7 @@ html, body {
     margin-left: 20%;
     margin-right: 20%;
     border-top: 3px solid white;
-    text-shadow: 1px 1px  black;
+    /* text-shadow: 1px 1px  black; */
 }
 #acao {
     color: white;

@@ -1,66 +1,200 @@
-html, body {
-    margin: 0;
+html, 
+body {/* Define o estilo do corpo e da página */
+  
+  margin: 0; /* Remove a margem padrão */
+  font-size: 14px; /* Define o tamanho da fonte como 14 pixels */
+  font-weight: 300; /* Define a espessura da fonte como 300 */
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;/* Define a fonte como Roboto, Open Sans, Arial, sans-serif */
 }
-#imagem_fundo {
-    background: url("img/caminho_educacao.jpeg");
-    height: 100%;
-    text-align: center;
-    background-size: cover;
+section { /* Define o estilo da seção */
+  width: 100%; /* Define a largura como 100% */
+  margin: 0 auto; /* Define a margem como 0 */
+  overflow: hidden; /* Define o overflow como hidden */
+  padding: 30px 0 20px 0; /* Define o padding como 30px 0 20px 0 */
 }
-#titulo {
-    color: rgb(1, 14, 5);
-    padding-top: 20%;
-    font-size: 70px;
-    line-height: 0.6;
-    text-shadow: 1px 1px  rgb(255, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+section hr { /* Define o estilo da linha */
+  width: 30px; /* Define a largura como 30px */
 }
-#subtitulo {
-    color: rgb(255, 255, 255);
-    margin-left: 20%;
-    margin-right: 20%;
-    border-top: 3px solid white;
-    text-shadow: 1px 1px  rgb(0, 0, 0);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.cor_fundo { /* Define a cor de fundo */
+  background: #f7f7f7; /* Define a cor de fundo como #f7f7f7 */
 }
-#acao {
-    color: white;
-    border-bottom: 1px white solid;
-    padding: 10px 20px 10px 20px ;
+/* --------  Header  -------- */
+header { /* Define o estilo do cabeçalho */
+  height: 60px; /* Define a altura como 60px */
+  width: 100%; /* Define a largura como 100% */
+  position: fixed; /* Define a posição como fixa */
+  z-index: 10; /* Define o z-index como 10 */
+  background: black;/* Define o background como black */
 }
-.icone {
-    width: 51px;
+header #logo { /* Define o estilo do logo */
+  position: absolute;/* Define a posição como absolute */
+  top: 10px;/* Define o top como 10px */
+  float: left;/* Define o float como left */
+  height: 40px; /* Define a altura como 40px */
+  width: 170px; /* Define a largura como 170px */
+  margin-left: 5%; /* Define a margem esquerda como 5% */
 }
-section {
-    padding: 20px;
-    float: left;
+header #logo img{ /* Define o estilo da imagem do logo */
+  max-height: 100%; /* Define a altura máxima como 100% */
 }
-.destaque {
-    background-color: #12915c;
+header .menu { /* Define o estilo do menu */
+  float: right; /* Define o float como right */
+  list-style: none; /* Define o estilo da lista como none */
+  margin-top: 0px; /* Define a margem superior como 0px */
+  margin-right: 5%; /* Define a margem direita como 5% */
 }
-.imgeco {
-    width: 90%;
-    height: 30%;
+header .menu li { /* Define o estilo dos itens da lista */
+  float: left;  /* Define o float como left */
+  font-size: 18px;  /* Define o tamanho da fonte como 18px */
+  padding: 20px 10px 20px 10px; /* Define o padding como 20px 10px 20px 10px */
 }
-.coluna {
-    float: left;
-    padding: 0 5%;
-    position: relative;
+header .menu li a { /* Define o estilo dos links */
+  color: initial; /* Define a cor como initial */
+  text-decoration: initial; /* Define o text-decoration como initial */
+  color: white; /* Define a cor como white */
 }
-.dois {
-    width: 40%;
+header .menu li:hover { /* Define o estilo dos itens da lista quando o mouse passa por cima */
+  background-color: #01acea;  /* Define a cor de fundo como #01acea */
 }
-.quatro {
-    width: 15%;
+/* --------  Capa  -------- */
+figure {  /* Define o estilo da figura */
+  margin: 0 auto; /* Define a margem como 0 */
 }
-.tres {
-    width: 29%;
-    padding: 0 2%;
+figure .imagem_fundo {  /* Define o estilo da imagem de fundo */
+  background: url(img/sea-bg.jpg); /* https://www.pexels.com/photo/beach-sea-blue-endless-wild-nature-103567/ */
+  background-size: cover; /* Define o background-size como cover */
+  height: 100%; /* Define a altura como 100% */
+  padding: 10px;  /* Define o padding como 10px */
 }
-.justificado {
-    text-align: justify;
+figure .titulo {  /* Define o estilo do título */
+  color: #FFF;  /* Define a cor como #FFF */
+  line-height: 0.9; /* Define o line-height como 0.9 */
+  text-shadow: 1px 1px black; /* Define o text-shadow como 1px 1px black */
 }
-.centralizado {
-    text-align: center;
+figure h1.titulo {  /* Define o estilo do título h1 */
+  font-size: 70px;  /* Define o tamanho da fonte como 70px */
+  letter-spacing: -5px; /* Define o letter-spacing como -5px */
+  margin: 20% 20% 0 20%;  /* Define a margem como 20% 20% 0 20% */
+  padding-bottom: 20px; /* Define o padding-bottom como 20px */
+}
+figure h2.titulo {  /* Define o estilo do título h2 */
+  padding-top: 20px;    /* Define o padding-top como 20px */
+  font-size: 30px;  /* Define o tamanho da fonte como 30px */
+  margin: 0 30% 0 30%;  /* Define a margem como 0 30% 0 30% */
+  border-top: 3px solid white;  /* Define a borda superior como 3px solid white */
+  padding-bottom: 30px; /* Define o padding-bottom como 30px */
+}
+.cta {  /* Define o estilo do botão */
+  border: 1px solid white;  /* Define a borda como 1px solid white */
+  border-radius: 8px; /* Define o border-radius como 8px */
+  color: white; /* Define a cor como white */
+  padding: 10 20 10 20; /* Define o padding como 10 20 10 20 */
+  text-decoration: initial; /* Define o text-decoration como initial */
+  font-size: 20px;  /* Define o tamanho da fonte como 20px */
+}
+.cta:hover {    /* Define o estilo do botão quando o mouse passa por cima */
+  background-color: #01acea;  /* Define a cor de fundo como #01acea */
+  border: 0px;  /* Define a borda como 0px */
+}
+/* --------  Colunas  -------- */
+.coluna { /* Define o estilo da coluna */
+  float: left;  /* Define o float como left */
+  padding: 0 5%;  /* Define o padding como 0 5% */
+  position: relative; /* Define a posição como relative */
+}
+.coluna.quatro {  /* Define o estilo da coluna quatro */
+  width: 15%; /* Define a largura como 15% */
+  padding: 0 5% 0 5%; /* Define o padding como 0 5% 0 5% */
+}
+.coluna.tres {  /* Define o estilo da coluna três */
+  width: 29%; /* Define a largura como 29% */
+  padding: 0 2%;  /* Define o padding como 0 2% */
+}
+.coluna.dois {  /* Define o estilo da coluna dois */
+  width: 40%; /* Define a largura como 40% */
+}
+.coluna .icone {  /* Define o estilo do ícone */
+  border-radius: 50%; /* Define o border-radius como 50% */
+  height: 85px; /* Define a altura como 85px */
+  width: 85px;  /* Define a largura como 85px */
+  text-align: center; /* Define o text-align como center */
+  margin: 0 auto; /* Define a margem como 0 */
+}
+.coluna .icone img{ /* Define o estilo da imagem do ícone */
+  max-width: 60%; /* Define a largura máxima como 60% */
+  max-height: 60%;  /* Define a altura máxima como 60% */
+  margin: 15px;   /* Define a margem como 15px */
+}
+.coluna:hover > .icone {  /* Define o estilo do ícone quando o mouse passa por cima */
+  background: lightblue;  /* Define o background como lightblue */
+}
+.coluna img { /* Define o estilo da imagem */
+  height: 300px;  /* Define a altura como 300px */
+  width: 100%;    /* Define a largura como 100% */
+}
+.coluna iframe {    /* Define o estilo do iframe */
+  top: 0; /* Define o top como 0 */
+  left: 0;  /* Define o left como 0 */
+  width: 100%;  /* Define a largura como 100% */
+}
+/* --------  Textos  -------- */
+h1 {  /* Define o estilo do título h1 */
+  text-align: center; /* Define o text-align como center */
+  font-size: 30px;  /* Define o tamanho da fonte como 30px */
+}
+h2 {
+  font-family: 'Roboto Slab', sans-serif; /* Define a fonte como 'Roboto Slab', sans-serif */
+  text-align: center; /* Define o text-align como center */
+  font-weight: 400; /* Define a espessura da fonte como 400 */
+  font-size: 16px;  /* Define o tamanho da fonte como 16px */
+}
+.esquerda { /* Define o text-align como left */
+  text-align: left; /* Define o text-align como left */
+}
+.direita {  /* Define o text-align como right */
+  text-align: right;  /* Define o text-align como right */
+}
+.centro { /* Define o text-align como center */
+  text-align: center; /* Define o text-align como center */
+}
+.justificado {  /* Define o text-align como justify */
+  text-align: justify;  /* Define o text-align como justify */
+}
+/* --------  Footer  -------- */
+footer {  /* Define o estilo do rodapé */
+  background-color: #01acea;  /* Define a cor de fundo como #01acea */
+  width: 100%;  /* Define a largura como 100% */
+  margin: 0 auto; /* Define a margem como 0 */
+  overflow: hidden; /* Define o overflow como hidden */
+  padding: 30px 0 50px 0; /* Define o padding como 30px 0 50px 0 */
+  color: #fff;  /* Define a cor como #fff */
+}
+footer .container { /* Define o estilo do container */
+  padding: 30px 0 50px 0; /* Define o padding como 30px 0 50px 0 */
+}
+/* --------  Responsividade  --------*/
+@media all and (max-width: 768px) { /* Define o estilo para telas com largura máxima de 768px */
+  .coluna, .coluna.quatro, .coluna.tres, .coluna.dois { 
+    /* Define o estilo das colunas */
+    display: block; /* Define o display como block */
+    width: 80%; /* Define a largura como 80% */
+    padding: 0; /* Define o padding como 0 */
+    margin: 10px auto;  /* Define a margem como 10px auto */
+    float: none;  /* Define o float como none */
+  }
+  header #logo {  /* Define o estilo do logo */
+    position: relative; /* Define a posição como relative */
+    width: 100%;  /* Define a largura como 100% */
+    margin-left: 0px; /* Define a margem esquerda como 0px */
+    text-align: center; /* Define o text-align como center */
+  }
+  .menu { /* Define o estilo do menu */
+    visibility: hidden; /* Define a visibilidade como hidden */
+  }
+  figure h1.titulo {  /* Define o estilo do título h1 */
+    margin-top: 40%;  /* Define a margem superior como 40% */
+  }
+  figure h2.titulo {  /* Define o estilo do título h2 */
+    margin: 0 10% 0 10%;  /* Define a margem como 0 10% 0 10% */
+  }
 }

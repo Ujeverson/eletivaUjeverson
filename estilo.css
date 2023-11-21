@@ -1,200 +1,214 @@
-html, 
-body {/* Define o estilo do corpo e da página */
-  
-  margin: 0; /* Remove a margem padrão */
-  font-size: 14px; /* Define o tamanho da fonte como 14 pixels */
-  font-weight: 300; /* Define a espessura da fonte como 300 */
-  font-family: Roboto, 'Open Sans', Arial, sans-serif;/* Define a fonte como Roboto, Open Sans, Arial, sans-serif */
+html,
+body { /* Define o estilo do corpo e da página */
+    margin: 0; /* Remove a margem padrão */
+    height: 100%; /* Define a altura como 100% */
+    padding: 0; /* Remove o padding padrão */
+    font-family: 'Noto Sans JP', sans-serif; /* Define a fonte como 'Noto Sans JP', sans-serif */
 }
-section { /* Define o estilo da seção */
-  width: 100%; /* Define a largura como 100% */
-  margin: 0 auto; /* Define a margem como 0 */
-  overflow: hidden; /* Define o overflow como hidden */
-  padding: 30px 0 20px 0; /* Define o padding como 30px 0 20px 0 */
+
+h3,h4, ul { /* Define o estilo dos títulos h3 e h4 e da lista */
+    text-transform: uppercase;
 }
-section hr { /* Define o estilo da linha */
-  width: 30px; /* Define a largura como 30px */
+
+p, h3, h4 { /* Define o estilo dos parágrafos, títulos h3 e h4 */
+    line-height: 1.5;
 }
-.cor_fundo { /* Define a cor de fundo */
-  background: #f7f7f7; /* Define a cor de fundo como #f7f7f7 */
+
+div {/* Define o estilo das divs */
+    display: block;
 }
-/* --------  Header  -------- */
+
+.fonte2 {/* Define o estilo da fonte2 */
+    font-family: 'Caveat', cursive;
+}
+
+
+/* cabeçalho */
 header { /* Define o estilo do cabeçalho */
-  height: 60px; /* Define a altura como 60px */
-  width: 100%; /* Define a largura como 100% */
-  position: fixed; /* Define a posição como fixa */
-  z-index: 10; /* Define o z-index como 10 */
-  background: black;/* Define o background como black */
+    background-color: black; /* Define a cor de fundo como black */
+    color: white;/* Define a cor como white */
+    height: 70px;/* Define a altura como 70px */
+    width: 100%;/* Define a largura como 100% */
+    position: fixed;/* Define a posição como fixa */
+    z-index: 8;/* Define o z-index como 8 */
 }
-header #logo { /* Define o estilo do logo */
-  position: absolute;/* Define a posição como absolute */
-  top: 10px;/* Define o top como 10px */
-  float: left;/* Define o float como left */
-  height: 40px; /* Define a altura como 40px */
-  width: 170px; /* Define a largura como 170px */
-  margin-left: 5%; /* Define a margem esquerda como 5% */
+
+#logo { /* Define o estilo do logo */
+    width: 100px;
+    top: 10px;
+    margin-left: 5%;
+    position: relative;
 }
-header #logo img{ /* Define o estilo da imagem do logo */
-  max-height: 100%; /* Define a altura máxima como 100% */
+
+ul { /* Define o estilo da lista */
+    float: right; 
+    margin-right: 5%;
+    margin-top: 0px;
+    list-style: none;
+
 }
-header .menu { /* Define o estilo do menu */
-  float: right; /* Define o float como right */
-  list-style: none; /* Define o estilo da lista como none */
-  margin-top: 0px; /* Define a margem superior como 0px */
-  margin-right: 5%; /* Define a margem direita como 5% */
+
+li {/* Define o estilo dos itens da lista */
+    float: left;/* Define o float como left */
+    padding: 23 15 23 15;/* Define o padding como 23 15 23 15 */
 }
-header .menu li { /* Define o estilo dos itens da lista */
-  float: left;  /* Define o float como left */
-  font-size: 18px;  /* Define o tamanho da fonte como 18px */
-  padding: 20px 10px 20px 10px; /* Define o padding como 20px 10px 20px 10px */
+
+li:hover {/* Define o estilo dos itens da lista quando o mouse passa por cima */
+    background-color: rgb(255, 175, 1);
+
 }
-header .menu li a { /* Define o estilo dos links */
-  color: initial; /* Define a cor como initial */
-  text-decoration: initial; /* Define o text-decoration como initial */
-  color: white; /* Define a cor como white */
+
+#divmenu {/* Define o estilo da divmenu */
+    transform: translateY(-56px);
 }
-header .menu li:hover { /* Define o estilo dos itens da lista quando o mouse passa por cima */
-  background-color: #01acea;  /* Define a cor de fundo como #01acea */
+
+
+/* capa */
+#imagem_capa {/* Define o estilo da imagem de fundo */
+    background: url("img/hibrido.gif");
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+    padding: 10px;
 }
-/* --------  Capa  -------- */
-figure {  /* Define o estilo da figura */
-  margin: 0 auto; /* Define a margem como 0 */
+
+#titulo {/* Define o estilo do título */
+    color: rgb(0, 0, 0);
+    padding-top: 10%;
+    font-size: 70px;
+    line-height: 1.0;
 }
-figure .imagem_fundo {  /* Define o estilo da imagem de fundo */
-  background: url(img/sea-bg.jpg); /* https://www.pexels.com/photo/beach-sea-blue-endless-wild-nature-103567/ */
-  background-size: cover; /* Define o background-size como cover */
-  height: 100%; /* Define a altura como 100% */
-  padding: 10px;  /* Define o padding como 10px */
+
+#subtitulo {/* Define o estilo do subtítulo */
+    color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 3px solid white;
+    text-shadow: 1px 1px white;
+    font-size: 30px;
+    line-height: 1.0;
 }
-figure .titulo {  /* Define o estilo do título */
-  color: #FFF;  /* Define a cor como #FFF */
-  line-height: 0.9; /* Define o line-height como 0.9 */
-  text-shadow: 1px 1px black; /* Define o text-shadow como 1px 1px black */
+
+/*classe dos links*/
+.acao {/* Define o estilo dos links */
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
 }
-figure h1.titulo {  /* Define o estilo do título h1 */
-  font-size: 70px;  /* Define o tamanho da fonte como 70px */
-  letter-spacing: -5px; /* Define o letter-spacing como -5px */
-  margin: 20% 20% 0 20%;  /* Define a margem como 20% 20% 0 20% */
-  padding-bottom: 20px; /* Define o padding-bottom como 20px */
+
+a {/* Define o estilo dos links */
+    color: rgb(0, 116, 0);
+    text-decoration: none;
 }
-figure h2.titulo {  /* Define o estilo do título h2 */
-  padding-top: 20px;    /* Define o padding-top como 20px */
-  font-size: 30px;  /* Define o tamanho da fonte como 30px */
-  margin: 0 30% 0 30%;  /* Define a margem como 0 30% 0 30% */
-  border-top: 3px solid white;  /* Define a borda superior como 3px solid white */
-  padding-bottom: 30px; /* Define o padding-bottom como 30px */
+
+/*icones*/
+.icone {
+    width: 100px;
+    border-radius: 50px;
+    border: 0.5px solid white;
 }
-.cta {  /* Define o estilo do botão */
-  border: 1px solid white;  /* Define a borda como 1px solid white */
-  border-radius: 8px; /* Define o border-radius como 8px */
-  color: white; /* Define a cor como white */
-  padding: 10 20 10 20; /* Define o padding como 10 20 10 20 */
-  text-decoration: initial; /* Define o text-decoration como initial */
-  font-size: 20px;  /* Define o tamanho da fonte como 20px */
+
+.coluna:hover>.icone {/* Define o estilo dos ícones quando o mouse passa por cima */
+    background: rgb(248, 183, 3);
+    border-radius: 50px;
 }
-.cta:hover {    /* Define o estilo do botão quando o mouse passa por cima */
-  background-color: #01acea;  /* Define a cor de fundo como #01acea */
-  border: 0px;  /* Define a borda como 0px */
+
+section {/* Define o estilo da seção */
+    padding: 60px 0 20px 0;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
 }
-/* --------  Colunas  -------- */
-.coluna { /* Define o estilo da coluna */
-  float: left;  /* Define o float como left */
-  padding: 0 5%;  /* Define o padding como 0 5% */
-  position: relative; /* Define a posição como relative */
+
+.destaque {/* Define o estilo do destaque */
+    background-color: #ebebeb;
 }
-.coluna.quatro {  /* Define o estilo da coluna quatro */
-  width: 15%; /* Define a largura como 15% */
-  padding: 0 5% 0 5%; /* Define o padding como 0 5% 0 5% */
+
+.imglocais {/* Define o estilo da imagem dos locais */
+    width: 100%;
 }
-.coluna.tres {  /* Define o estilo da coluna três */
-  width: 29%; /* Define a largura como 29% */
-  padding: 0 2%;  /* Define o padding como 0 2% */
+
+.social {/* Define o estilo das redes sociais */
+    width: 2%;
+    padding:2px 1px 0px 0px;
+    color: white;
 }
-.coluna.dois {  /* Define o estilo da coluna dois */
-  width: 40%; /* Define a largura como 40% */
+
+/* divisões das colunas */
+.coluna {/* Define o estilo das colunas */
+    float: left;
+    padding: 2% 5% 2% 5%;
+    position: relative;
 }
-.coluna .icone {  /* Define o estilo do ícone */
-  border-radius: 50%; /* Define o border-radius como 50% */
-  height: 85px; /* Define a altura como 85px */
-  width: 85px;  /* Define a largura como 85px */
-  text-align: center; /* Define o text-align como center */
-  margin: 0 auto; /* Define a margem como 0 */
+
+.duas {/* Define o estilo com duas colunas */
+    width: 40%;
 }
-.coluna .icone img{ /* Define o estilo da imagem do ícone */
-  max-width: 60%; /* Define a largura máxima como 60% */
-  max-height: 60%;  /* Define a altura máxima como 60% */
-  margin: 15px;   /* Define a margem como 15px */
+
+.tres {/* Define o estilo com três colunas */
+    width: 23%;
+
 }
-.coluna:hover > .icone {  /* Define o estilo do ícone quando o mouse passa por cima */
-  background: lightblue;  /* Define o background como lightblue */
+
+.quatro {/* Define o estilo com quatro colunas */
+    width: 15%;
 }
-.coluna img { /* Define o estilo da imagem */
-  height: 300px;  /* Define a altura como 300px */
-  width: 100%;    /* Define a largura como 100% */
+
+/*alinhamento de texto */
+.justificado {
+    text-align: justify;
 }
-.coluna iframe {    /* Define o estilo do iframe */
-  top: 0; /* Define o top como 0 */
-  left: 0;  /* Define o left como 0 */
-  width: 100%;  /* Define a largura como 100% */
+
+.centralizado {
+    text-align: center;
 }
-/* --------  Textos  -------- */
-h1 {  /* Define o estilo do título h1 */
-  text-align: center; /* Define o text-align como center */
-  font-size: 30px;  /* Define o tamanho da fonte como 30px */
+
+/* rodapé */
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    color: white;
+    overflow: hidden;
 }
-h2 {
-  font-family: 'Roboto Slab', sans-serif; /* Define a fonte como 'Roboto Slab', sans-serif */
-  text-align: center; /* Define o text-align como center */
-  font-weight: 400; /* Define a espessura da fonte como 400 */
-  font-size: 16px;  /* Define o tamanho da fonte como 16px */
-}
-.esquerda { /* Define o text-align como left */
-  text-align: left; /* Define o text-align como left */
-}
-.direita {  /* Define o text-align como right */
-  text-align: right;  /* Define o text-align como right */
-}
-.centro { /* Define o text-align como center */
-  text-align: center; /* Define o text-align como center */
-}
-.justificado {  /* Define o text-align como justify */
-  text-align: justify;  /* Define o text-align como justify */
-}
-/* --------  Footer  -------- */
-footer {  /* Define o estilo do rodapé */
-  background-color: #01acea;  /* Define a cor de fundo como #01acea */
-  width: 100%;  /* Define a largura como 100% */
-  margin: 0 auto; /* Define a margem como 0 */
-  overflow: hidden; /* Define o overflow como hidden */
-  padding: 30px 0 50px 0; /* Define o padding como 30px 0 50px 0 */
-  color: #fff;  /* Define a cor como #fff */
-}
-footer .container { /* Define o estilo do container */
-  padding: 30px 0 50px 0; /* Define o padding como 30px 0 50px 0 */
-}
-/* --------  Responsividade  --------*/
-@media all and (max-width: 768px) { /* Define o estilo para telas com largura máxima de 768px */
-  .coluna, .coluna.quatro, .coluna.tres, .coluna.dois { 
-    /* Define o estilo das colunas */
-    display: block; /* Define o display como block */
-    width: 80%; /* Define a largura como 80% */
-    padding: 0; /* Define o padding como 0 */
-    margin: 10px auto;  /* Define a margem como 10px auto */
-    float: none;  /* Define o float como none */
-  }
-  header #logo {  /* Define o estilo do logo */
-    position: relative; /* Define a posição como relative */
-    width: 100%;  /* Define a largura como 100% */
-    margin-left: 0px; /* Define a margem esquerda como 0px */
-    text-align: center; /* Define o text-align como center */
-  }
-  .menu { /* Define o estilo do menu */
-    visibility: hidden; /* Define a visibilidade como hidden */
-  }
-  figure h1.titulo {  /* Define o estilo do título h1 */
-    margin-top: 40%;  /* Define a margem superior como 40% */
-  }
-  figure h2.titulo {  /* Define o estilo do título h2 */
-    margin: 0 10% 0 10%;  /* Define a margem como 0 10% 0 10% */
-  }
+
+/* Responsividade */
+@media all and (max-width: 1000px) {
+    #divmenu {
+        visibility: hidden;
+    }
+
+    .coluna, .dois, .tres, .quatro { /* Define o estilo das colunas quando aumentar ou diminuir o tamanho da tela */
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+
+    #divlogo {/* Define o estilo da divlogo */
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    header #logo {/* Define o estilo do logo */
+        margin-left: 0px;
+        position: relative;
+        text-align: center;
+    }
+
+    h1 {/* Define o estilo do título h1 */
+        margin-top: 20%;
+    }
+
+    h2 {/* Define o estilo do título h2 */
+        margin: 0 10% 0 10%;
+    }
+
 }

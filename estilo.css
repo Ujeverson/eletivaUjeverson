@@ -166,6 +166,7 @@ h2 {
 }
 .justificado {  /* Define o text-align como justify */
   text-align: justify;  /* Define o text-align como justify */
+  line-height: 1.5;
 }
 /* --------  Footer  -------- */
 footer {  /* Define o estilo do rodapé */

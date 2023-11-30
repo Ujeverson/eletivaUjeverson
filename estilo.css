@@ -169,7 +169,7 @@ h2 {
 }
 /* --------  Footer  -------- */
 footer {  /* Define o estilo do rodapé */
-  background-color: #01acea;  /* Define a cor de fundo como #01acea */
+  background-color: #000000;  /* Define a cor de fundo como #01acea */
   width: 100%;  /* Define a largura como 100% */
   margin: 0 auto; /* Define a margem como 0 */
   overflow: hidden; /* Define o overflow como hidden */

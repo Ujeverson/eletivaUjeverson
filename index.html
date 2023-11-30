@@ -7,7 +7,7 @@
   <title>Educação 4.0 - O Futuro Hoje!</title>
   <!-- A tag <title> define o título da página, que aparece na aba do navegador. -->
 
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="style.css">
   <!-- A tag <link> é usada para linkar um arquivo CSS externo, que contém os estilos que serão aplicados ao HTML. -->
 
   <meta charset="utf-8"/>
@@ -23,7 +23,7 @@
   <!--MENU-->
   <header>
     <!-- A tag <header> é usada para definir um cabeçalho para um documento ou seção. -->
-    <div id="logo"><img src="img/logo.png" alt="Logo - Meu Site"/></div> <!-- A tag <div> com um id é um container que pode ser estilizado com CSS. A tag <img> é usada para inserir uma imagem. -->
+    <div id="logo"><a href="#inicio"><img src="img/logo.png" alt="Logo - Meu Site"/></a></div> <!-- A tag <div> com um id é um container que pode ser estilizado com CSS. A tag <img> é usada para inserir uma imagem. -->
 
     <ul class="menu">
       <!-- A tag <ul> define uma lista não ordenada e o atributo class permite que seja estilizada com CSS. -->
@@ -37,6 +37,7 @@
   </header>
 
   <!--CAPA-->
+  <section id="inicio">
   <figure id="capa" class="centro">
     <!-- A tag <figure> é usada para marcar conteúdo independente como imagens, diagramas, etc. Pode ser estilizada com CSS através do id e da classe. -->
     <div class="imagem_fundo">
@@ -49,7 +50,7 @@
       <!-- A tag <a> aqui é usada como um botão de chamada para ação (Call To Action - CTA), levando o usuário para a seção do projeto. -->
     </div>
   </figure>
-
+</section>
   <!--PROJETO-->
   <!-- As tags <section> definem seções do documento e são identificadas pelo id. As classes "coluna" e "dois" seriam usadas para estilizar as colunas e o layout. -->
   <!-- A tag <iframe> é usada para embutir outro documento dentro do atual, neste caso, um vídeo do YouTube. -->

@@ -18,6 +18,10 @@ section hr { /* Define o estilo da linha */
 .cor_fundo { /* Define a cor de fundo */
   background: #f7f7f7; /* Define a cor de fundo como #f7f7f7 */
 }
+a:link {
+  text-decoration: none;
+  
+}
 .imagem_sobre { /* Define o estilo da imagem miniatura */
   width: 100%; /* Define a largura como 100% */
   height: 200px; /* Define a altura como 200px */
@@ -60,8 +64,9 @@ header .menu li a { /* Define o estilo dos links */
   color: white; /* Define a cor como white */
 }
 header .menu li:hover { /* Define o estilo dos itens da lista quando o mouse passa por cima */
-  background-color: #01acea;  /* Define a cor de fundo como #01acea */
+  background-color: #f7089f7e;  /* Define a cor de fundo como #01acea */
 }
+
 /* --------  Capa  -------- */
 figure {  /* Define o estilo da figura */
   margin: 0 auto; /* Define a margem como 0 */
@@ -98,8 +103,10 @@ figure h2.titulo {  /* Define o estilo do título h2 */
   text-decoration: initial; /* Define o text-decoration como initial */
   font-size: 20px;  /* Define o tamanho da fonte como 20px */
 }
+
+
 .cta:hover {    /* Define o estilo do botão quando o mouse passa por cima */
-  background-color: #01acea;  /* Define a cor de fundo como #01acea */
+  background-color: #f7089f7e;  /* Define a cor de fundo como #01acea */
   border: 0px;  /* Define a borda como 0px */
 }
 /* --------  Colunas  -------- */

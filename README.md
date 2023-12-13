@@ -1,4 +1,4 @@
-Eletiva
+#Eletiva
 TECNOLOGIA E SUSTENTABILIDADE:
 Inteligências Artificiais Generativas e os Objetivos de Desenvolvimento Sustentável
 
